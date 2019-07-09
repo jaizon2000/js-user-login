@@ -1,0 +1,52 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    /* background: bg-color bg-img bg-repeat bg-position bg-attachement */
+    background: lightblue url(images/background.jpg) no-repeat center fixed;
+    background-size: cover;
+    width: 600px;
+    margin: 0 auto;
+    
+}
+
+/* CONTENT */
+.main {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+    border: 2px solid purple;
+}
+/* LOGIN BOX */
+.login {
+    background-color: purple;
+    color: white;
+    padding: 40px 75px;
+}
+.center {
+    text-align: center;
+   
+}
+.loginBtn {
+    padding: 5px 15px;
+    font-size: 20px;
+    background-color: green;
+    color: white;
+}
+.forgot{
+    font-family: Georgia;
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+}
+a:hover.forgot {
+    /* text-decoration: line color style */
+    text-decoration: underline;
+    color: yellow;
+}
+    /* SOCIAL ICONS */
+.social {
+    padding: 20px 0;
+}
+.resize {
+    width: 50px;
+}

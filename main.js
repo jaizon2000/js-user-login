@@ -15,29 +15,33 @@ function main() {
     let username = document.getElementById('username').value;
     let password = document.getElementById('password').value;
 
-    let user = 'jaizon2000';
-    let pass = '1';
+    // Credentials
+    var user = '1';
+    var pass = '1';
 
-    // RIGHT
+    // RIGHT 
     if (username == user && password == pass) {
-        alert('Sign In Successful');
+        alert('Sign In Successful :)');
+        document.getElementById('greet').style.color = 'lightGreen';
+        document.getElementById('greet').innerHTML = 'Welcome!';
 
-        // WRONG
-    } else if (username != user || passwords != pass) {
-        alert('Sign In Unsuccessful')
 
-        // Wrong Username
-        if (username != user) {
+    } if (username != user || password != pass) { // WRONG
+        alert('Sign In Unsuccessful :(')
+        document.getElementById('greet').style.color = 'red';
+
+        // Both Wrong
+        if (password != pass && username != user) {
+            document.getElementById('greet').innerHTML = 'Wrong username and password.<br>Please try again.'
+
+            // Wrong Username
+        } else if (username != user) {
             document.getElementById('greet').innerHTML = 'Wrong username.<br>Please try again.';
 
             // Wrong password
         } else if (password != pass) {
             document.getElementById('greet').innerHTML = 'Wrong password.<br>Please try again.'
-
-            // Both Wrong
-        } else if (password != pass && username != user) {
-            document.getElementById('greet').innerHTML = 'Wrong username and password.<br>Please try again.'
         }
-        document.getElementById('greet').style.color = 'red';
+
     }
 }

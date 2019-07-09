@@ -6,9 +6,10 @@ Check proper sign in credentials
 !() NOT
 
 */
-
+'use strict';
 // Event listener
 document.getElementById('btn').addEventListener('click', main);
+document.addEventListener('keydown', enterKey);
 
 // Function
 function main() {
@@ -26,7 +27,8 @@ function main() {
         document.getElementById('greet').innerHTML = 'Welcome!';
 
 
-    } if (username != user || password != pass) { // WRONG
+    }
+    if (username != user || password != pass) { // WRONG
         alert('Sign In Unsuccessful :(')
         document.getElementById('greet').style.color = 'red';
 
@@ -43,5 +45,12 @@ function main() {
             document.getElementById('greet').innerHTML = 'Wrong password.<br>Please try again.'
         }
 
+    }
+}
+
+function enterKey(event) {
+    // console.log(event.keyCode);
+    if (event.keyCode == 13) { // Enter key
+        main()
     }
 }

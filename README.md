@@ -1,6 +1,15 @@
-# web-dev-user-login
-Design Resources for Web Dev User Login Assignment
+# js-user-login
 
+## JS Instructions
+Create a program to check for proper sign in credentials.  
+
+If the username and password match a username and password of your choice, then report “Sign In Successful”, otherwise, report “Sign In Unsuccessful”.
+
+### Advanced
+If the Sign In is Unsuccessful, do something to indicate what was invalid: the username, password or both.
+
+---
+Design Resources for Web Dev User Login Assignment
 <h2>Screen Shot</h2>
 <img src="images/user-login-screenshot.png">
 
